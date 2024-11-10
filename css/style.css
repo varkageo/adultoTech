@@ -1,0 +1,370 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    background: url(../img/graphicCard.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+header ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li a{
+    color: white;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+.car{
+    display: none;
+    background-color: aquamarine;
+    position: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2rem;
+    gap: 2rem;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px; 
+    z-index: 10;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.555);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #333333d5;
+    color: #fff;
+    transition: 0.3s ease;
+    visibility: hidden;
+
+}
+.car button {
+    background: transparent;
+    cursor: pointer;
+}
+
+.car button img{
+    width: 30px;
+}
+.car .comprar{
+    background: #ffffff;
+    background: radial-gradient(circle farthest-corner at center center, #ffffff 0%, #00ff00 80%);
+    padding: 10px;
+    border-radius: 5px;
+}
+header button{
+    margin-right: -20%;
+    align-items: center;
+    height: 50px;
+    background: transparent; 
+    border: none;
+}
+header button img{
+    height: 50px;
+    cursor: pointer;
+}
+header button img:hover{
+    transform: scale(1.2);
+}
+.carrito{
+    
+    width: 150px;
+    
+}
+#carrito{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+    background-position: center;
+    height: 700px;
+    padding-top: 100px;
+}
+
+.hero .texts{
+    padding: 70px;
+}
+.hero .texts h2{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 50px;
+}
+.hero .texts h3{
+    font-size: 60px;
+    color: white;
+}
+
+.cards{
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    background-color: #e6e6e6;
+    padding: 30px;
+}
+
+.card{
+    height: 480px;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.card img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+    align-self: center;
+}
+.card h4{
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.card button{
+    margin-top: 25px;
+    background-color: #4bff4b;
+    padding: 15px;
+    border-color: rgb(0, 153, 0);
+    border-radius: 5px;
+}
+.card button:hover{
+    cursor: pointer;
+    background-color: #8bff8b;
+}
+
+.revsSection{
+    background-color: #e6e6e6;
+    display: flex;
+    width: 100%;
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.revsName{
+    width: 50%;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.reviews{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.revs{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+.revs img{width: 50px;}
+.revs h3{
+    font-size: 40px;
+    padding: 0px 10px 0px 10px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+footer .foot1 ul li a{
+    color: rgb(177, 177, 177);
+    font-size: 10px;
+
+}
+footer .foot2 ul{
+    gap: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot2 ul li img{
+    width: 50px;
+}
+/*
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar contenido"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 5px;
+    height: 100vh;
+}*/
+
+
+/* Contacto section*/
+
+
+
+.formulario{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+fieldset{
+    border-radius: 10px;
+    background-color: #fde9ff;
+}
+label{
+    padding-top: 10px;
+    
+}
+input[type="number"] {
+    -moz-appearance: textfield; 
+    -webkit-appearance: none;   
+    appearance: none;           
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 10px;
+}
+.personal input{
+    border-radius: 5px;
+    padding: 10px;
+}
+.personal textarea{
+    height: 100px;
+    width: 500px;
+    padding: 10px;
+}
+.personal button{
+    padding: 5px;
+    margin-top: 10px;
+}
+@media (max-width: 640px){
+
+    /*header*/
+    
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+
+    
+    header ul{
+        flex-direction: column;
+        background-color: #00000069;
+        height: 300px;
+        width: 200px;
+        padding: 30px;
+        border-radius: 0px 0px 29px 20px;;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header ul li{
+        width: 100%;
+        
+    }
+    header ul li a{
+        background-color: #c0c0c054;
+        display: block;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+}
+
+/*
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestaña Desplegable</title>
+    <style>
+        #panel {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleBtn">Abrir Pestaña</button>
+    <div id="panel">
+        <p>Esta es la pestaña desplegable.</p>
+        <button id="closeBtn">Cerrar</button>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const panel = document.getElementById('panel');
+        const closeBtn = document.getElementById('closeBtn');
+
+        toggleBtn.onclick = () => {
+            panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+        };
+
+        closeBtn.onclick = () => {
+            panel.style.display = 'none';
+        };
+    </script>
+</body>
+</html>
+
+*/

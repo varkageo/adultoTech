@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GraficasExpress</title>
+</head>
+<body>
+
+
+
+    <header>
+        <div class="logo"></div>
+        <ul>
+            <li><a href="#">Graficas</a></li>
+            <li><a href="#">Fuentes</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="carrito">
+            <button id="openbtn" onclick="toggleCarrito()"><img src="img/shopping.png" alt=""></button>
+            <p style="color: white;">$<span id="total" style="color: white;">0</span> USD</p>
+        </div>
+        
+    </header>
+
+
+
+
+
+    <section class="car" id="carritoSection">
+        <button id="closebtn" onclick="toggleCarrito()"><img src="img/letter-x_4553028.png" alt=""></button>
+        <div id="carrito">
+            <h3>Productos</h3>
+            <form action="">
+                <ul id="listaCarrito">
+            
+                </ul>
+                
+                <button type="submit" class="comprar">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="hero">
+        <div class="texts">
+            <h2>Las mejores gráficas y fuentes del mercado</h2>
+            <h3>a los mejores precios</h3>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img src="img/g1.jpg" alt="">
+            <h3>Placa De Video Gigabyte Geforce Rtx 4090 Ti</h3>
+            <h4>$ 1000 USD</h4>
+            <hr>
+            <button onclick="addCarrito('Gigabyte Geforce Rtx 4090 Ti', 1000)">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/g2.webp" alt="">
+            <h3>Placa De Video Msi Geforce Rtx 4070 Ti</h3>
+            <h4>$ 800 USD</h4>
+            <hr>
+            <button onclick="addCarrito('Msi Geforce Rtx 4070 Ti', 800)">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/G3.webp" alt="">
+            <h3>Placa De Video Rtx 4060 Ti Gigabyte</h3>
+            <h4>$ 600 USD</h4>
+            <hr>
+            <button onclick="addCarrito('Rtx 4060 Ti Gigabyte', 600)">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/MSI.webp" alt="">
+            <h3>Msi Mpg A750Gf 750W 80 Plus</h3>
+            <h4>$ 170 USD</h4>
+            <hr>
+            <button onclick="addCarrito('Msi Mpg A750Gf 750W', 170)">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/corsair.png" alt="">
+            <h3>Fuente Corsair CX550 550W 80 Plus Bronze</h3>
+            <h4>$73 USD</h4>
+            <hr>
+            <button onclick="addCarrito('Corsair CX550 550W', 73)">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/thermal.webp" alt="">
+            <h3>Thermaltake Tr2 500W</h3>
+            <h4>$ 52 USD</h4>
+            <hr>
+            <button onclick="addCarrito('Thermaltake Tr2 500W', 52)">Añadir al carrito</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="revsSection">
+        <h2>Opiniones de nuestro trabajo</h2>
+    <div class="revsName">
+        <h3>Generales</h3>
+        <h3>Positivas</h3>
+        <h3>Negativas</h3>
+    </div>
+    <div class="reviews">
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>7</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/sad.png" alt="">
+            <h3>2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>8</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/sad.png" alt="">
+            <h3>1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>7</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>9</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/sad.png" alt="">
+            <h3>3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="revs">
+            <img src="img/star.png" alt="">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="foot1">
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Trabaja con nosotros</a></li>
+                <li><a href="">Politica</a></li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <ul>
+                <li><a href=""><img src="img/instagram_2111463.png" alt=""></a></li>
+                <li><a href=""><img src="img/youtube_3938026.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
