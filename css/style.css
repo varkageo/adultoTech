@@ -275,12 +275,13 @@ input[type="number"]::-webkit-inner-spin-button {
 .personal{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     width: 40%;
     padding: 10px;
 }
 .personal input{
     border-radius: 5px;
+    width: 500px;
     padding: 10px;
 }
 .personal textarea{
@@ -292,10 +293,12 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 5px;
     margin-top: 10px;
 }
-@media (max-width: 640px){
 
+/*
+@media (max-width: 640px){
+*/
     /*header*/
-    
+/*   
     .logo{
         width: 30px;
         height: 30px;
@@ -326,7 +329,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
 }
-
+*/
 /*
 <!DOCTYPE html>
 <html lang="es">
